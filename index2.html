@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地震くんのやらかし防災日記</title>
+    <style>
+        body {
+            font-family: 'Hiragino Kaku Gothic ProN', 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            background-color: #4EAEE2;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        h1 {
+            font-size: 32px;
+            margin: 0;
+            padding: 10px;
+            position: relative;
+            z-index: 2;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        
+        .episode-title {
+            background-color: #FFA07A;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            font-size: 20px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .scene {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            /* 青い線を削除しました */
+            position: relative;
+        }
+        
+        .scene-title {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #4EAEE2;
+            border-bottom: 2px dotted #4EAEE2;
+            padding-bottom: 5px;
+        }
+        
+        .scene-content {
+            padding: 10px;
+        }
+        
+        .character-speech {
+            background-color: #E6F4F1;
+            border-radius: 15px;
+            padding: 15px;
+            margin: 10px 0;
+            position: relative;
+        }
+        
+        .character-speech.earthquake-kun {
+            background-color: #E6F4F1;
+            /* 青い線を削除しました */
+        }
+        
+        .character-speech.sonae-chan {
+            background-color: #FFF0F5;
+            /* 左側の余白を削除しました */
+        }
+        
+        .tips-box {
+            background-color: #FFFACD;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px dashed #FFA07A;
+        }
+        
+        .tips-box ul {
+            padding-left: 20px;
+        }
+        
+        .checklist {
+            background-color: #FFFACD;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px dashed #FFA07A;
+        }
+        
+        .checklist ul {
+            list-style-type: none;
+            padding-left: 5px;
+        }
+        
+        .checklist li {
+            margin-bottom: 10px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .checklist li:before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+        }
+        
+        .emotion {
+            font-size: 24px;
+            vertical-align: middle;
+            margin: 0 5px;
+        }
+        
+        .footer {
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+            margin-top: 30px;
+            color: #4EAEE2;
+        }
+        
+        .character-image {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .character-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .earthquake-image {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .emphasis {
+            font-weight: bold;
+            color: #FF6347;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+                margin-top: 10px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .episode-title {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>地震くんのやらかし防災日記</h1>
+        </header>
+        
+        <div class="episode-title">
+            📖 第一話：箱根旅行！温泉でのんびりしてたら、地震が…！？
+        </div>
+        
+        <div class="scene">
+            <div class="scene-title">1. のんびり温泉タイム♪</div>
+            <div class="scene-content">
+                <div class="character-speech earthquake-kun">
+                    やぁ！地震くんだよ！<br>
+                    この前、箱根に旅行に行ったんだ。温泉でぽかぽか、の～んびりしてたんだよ。<br>
+                    「ふぅ～、気持ちいいなぁ～！」<br>
+                    お風呂にぷかぷか浮かんで、完全にリラックスモード。<br>
+                    でも、そのとき……
+                </div>
+                
+                <div class="character-image">
+                    <img src="1.png" alt="温泉でリラックスする地震くん" />
+                </div>
+            </div>
+        </div>
+        
+        <div class="scene">
+            <div class="scene-title">2. ぐらぐらっ！！突然の揺れ！</div>
+            <div class="scene-content">
+                <div class="character-speech earthquake-kun">
+                    「わわっ！？」<br>
+                    温泉に入っていたら、突然グラグラっと揺れたんだ！<br>
+                    「え！？え！？お風呂で地震ってどうすればいいの！？💦」<br>
+                    焦って立ち上がろうとしたら、<br>
+                    <span class="emphasis">ズルッ！！</span><br>
+                    「うわぁぁぁ！！！」<br>
+                    足を滑らせて、あやうく湯船にダイブするところだったよ……。
+                </div>
+                
+                <div class="character-image">
+                    <img src="2.png" alt="驚いて滑る地震くん" />
+                </div>
+            </div>
+        </div>
+        
+        <div class="scene">
+            <div class="scene-title">3. そなえちゃんの冷静アドバイス！</div>
+            <div class="scene-content">
+                <div class="character-speech earthquake-kun">
+                    そなえちゃんにあとで話したら、
+                </div>
+                
+                <div class="character-speech sonae-chan">
+                    「温泉で地震が起きたら、まずは落ち着くことが大事！」
+                </div>
+                
+                <div class="tips-box">
+                    <ul>
+                        <li>あわてて立ち上がらない！（転倒の危険！）</li>
+                        <li>揺れが収まるまで、浴槽につかまる</li>
+                        <li>もしすぐに避難が必要なら、タオルで体をふいて、滑らないように！</li>
+                    </ul>
+                </div>
+                
+                <div class="character-speech earthquake-kun">
+                    「なるほど～！！」<br>
+                    お風呂での地震は、パニックになりがちだから、 事前にどうするか考えておくのが大事なんだね！
+                </div>
+                
+                <div class="character-image">
+                    <img src="6.png" alt="アドバイスするそなえちゃんと地震くん" />
+                </div>
+            </div>
+        </div>
+        
+        <div class="scene">
+            <div class="scene-title">4. まとめ：「温泉でも備えが大事！」</div>
+            <div class="scene-content">
+                <div class="character-speech earthquake-kun">
+                    箱根旅行は楽しかったけど、<br>
+                    「温泉で地震が起きることもある！」ってことを学んだよ。<br>
+                    だから、温泉に入る前に
+                </div>
+                
+                <div class="checklist">
+                    <ul>
+                        <li><strong>避難経路を確認する！</strong></li>
+                        <li><strong>もしものときの行動を決めておく！</strong></li>
+                    </ul>
+                </div>
+                
+                <div class="character-speech earthquake-kun">
+                    これが大事だね！<br>
+                    「よ～し！次の旅先でも、ちゃんと備えるぞ！」<br>
+                    ……でも、次こそは<br>
+                    「のんびり温泉タイム」を最後まで楽しみたいなぁ～！<span class="emotion">😂</span><span class="emotion">♨️</span>
+                </div>
+                
+                <div class="character-image">
+                    <img src="3.png" alt="決意する地震くんとそなえちゃん" />
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            つづく！
+        </div>
+    </div>
+</body>
+</html>
